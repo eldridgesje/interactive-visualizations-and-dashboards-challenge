@@ -4,7 +4,7 @@
 
 function barChart(sampleID) {
 
-    d3.json("samples.json").then(data => {
+    d3.json("/interactive-visualizations-and-dashboards-challenge/static\js/samples.json").then(data => {
 
         let samples = data.samples;
 
@@ -45,7 +45,7 @@ function barChart(sampleID) {
 
 function bubbleChart(sampleID) {
 
-    d3.json("samples.json").then(data => {
+    d3.json("/interactive-visualizations-and-dashboards-challenge/static\js/samples.json").then(data => {
 
         let samples = data.samples;
 
@@ -88,7 +88,7 @@ function bubbleChart(sampleID) {
 
 function demoBox(sampleID) {
 
-    d3.json("samples.json").then(data => {
+    d3.json("/interactive-visualizations-and-dashboards-challenge/static\js/samples.json").then(data => {
 
         let metadata = data.metadata;
 
@@ -148,7 +148,7 @@ function InitDashboard() {
 
     let selector = d3.select("#selDataset");
 
-    d3.json("../samples.json").then(data => {
+    d3.json("/interactive-visualizations-and-dashboards-challenge/static\js/samples.json").then(data => {
 
         let sampleIDs = data.names;
 
