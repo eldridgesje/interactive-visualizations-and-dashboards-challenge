@@ -53,9 +53,6 @@ function bubbleChart(sampleID) {
 
         let result = filterData[0]
 
-        console.log(filterData);
-        console.log(result);
-
         let otu_ids = result.otu_ids;
         let otu_labels = result.otu_labels;
         let sample_values = result.sample_values;
@@ -91,6 +88,41 @@ function bubbleChart(sampleID) {
 
 function demoBox(sampleID) {
 
+    d3.json("samples.json").then(data => {
+
+        let metadata = data.metadata;
+
+        let filtered = metadata.filter(s => s.id === +sampleID);
+
+        let result = filtered[0];
+
+        let ID = result.id;
+        let ethnicity = result.ethnicity;
+        let gender = result.gender;
+        let age = result.age;
+        let location = result.location;
+        let bbtype = result.bbtype;
+        let wfreq = result.wfreq;
+
+
+    // Connect to the table in the HTML
+    var demoPanel = d3.select(".panel-body");
+
+    //Clear the table
+    demoPanel.html("");
+
+    //Create a row in the table for each record in the data
+    demoPanel.append("p").html(
+        `<strong>id:</strong> ${ID}<br>
+        <strong>ethnicity:</strong> ${ethnicity}<br>
+        <strong>gender:</strong> ${gender}<br>
+        <strong>age:</strong> ${age}<br>
+        <strong>location:</strong> ${location}<br>
+        <strong>bbtype:</strong> ${bbtype}<br>
+        <strong>wfreq:</strong> ${wfreq}`
+    );
+
+    })
 
 }
 
