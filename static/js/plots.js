@@ -137,6 +137,8 @@ function optionChanged(id) {
 
     demoBox(id)
 
+    gaugeChart(id)
+
 }
 
 // FUNCTION FOR INITIALIZING THE DASHBOARD
@@ -160,11 +162,13 @@ function InitDashboard() {
 
         let sampleID = sampleIDs[0]
 
-        barChart(sampleID)
+        barChart(sampleID);
 
-        bubbleChart(sampleID)
+        bubbleChart(sampleID);
     
-        demoBox(sampleID)    
+        demoBox(sampleID);
+
+        gaugeChart(sampleID);
 
     });
 
