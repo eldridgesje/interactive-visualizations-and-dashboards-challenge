@@ -1,11 +1,12 @@
-console.log("bonus.js is loaded");
+url = "/interactive-visualizations-and-dashboards-challenge/samples.json"
+
 
 // FUNCTION FOR THE GAUGE CHART
 
 
 function gaugeChart(sampleID) {
 
-    d3.json("samples.json").then(data => {
+    d3.json(url).then(data => {
 
         let metadata = data.metadata;
 
