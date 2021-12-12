@@ -1,4 +1,4 @@
-url = "/interactive-visualizations-and-dashboards-challenge/samples.json"
+url = "https://eldridgesje.github.io/interactive-visualizations-and-dashboards-challenge/samples.json"
 
 
 // FUNCTION FOR THE GAUGE CHART

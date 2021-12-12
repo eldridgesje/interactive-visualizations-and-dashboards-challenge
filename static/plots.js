@@ -1,6 +1,6 @@
 // Code begun with Dom's office hours demonstration from 12/11/21
 
-url = "/interactive-visualizations-and-dashboards-challenge/samples.json"
+url = "https://eldridgesje.github.io/interactive-visualizations-and-dashboards-challenge/samples.json"
 
 // FUNCTION FOR THE BAR CHART
 
